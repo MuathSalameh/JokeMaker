@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.cdnfonts.com/css/adlam-display" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/anek-telugu" rel="stylesheet">
+    <title>JokeMaker</title>
+</head>
+<body>
+   <!-- the container div -->
+ <div class="the-flex-box">
+    <h1> Want to hear a joke ?</h1>
+    <!-- the form -->
+    <form action="/" method="post">
+<!-- selec a categories div -->
+<div class="categories"> 
+ <p>▪️Select a categorie(optional) : </p>
+<span> 
+<label>Programming</label>
+<input type="checkbox" value="Programming" name="Programming">
+<label>Misc</label>
+<input type="checkbox" value="Miscellaneous" name="Miscellaneous">
+<label>Dark</label>
+<input type="checkbox" value="Dark" name="Dark">
+<label>Pun</label>
+<input type="checkbox" value="Pun" name="Pun">
+<label>Spooky</label>
+<input type="checkbox" value="Spooky" name="Spooky">
+<label>Christmas</label>
+<input type="checkbox" value="Christmas" name="Christmas">
+</span>
+</div>
+<!-- select a language div -->
+<div class="language"> 
+    <p>▪️Select the language :</p>
+<select name="language">
+    <option value="en">en-English</option>
+    <option value="de">de-German</option>
+    <option value="fr">fr-France</option>
+    <option value="es">es-Spain</option>
+    <option value="pt">pt-Portugees</option>
+    <option value="cs">cs-Czech</option>
+</select>
+</div>
+<!-- select a flag to blacklist div -->
+<div class="flags">
+    <p>▪️Select a flag to Blacklist :</p>
+    <span> 
+<label>nsfw</label>
+<input type="checkbox" value="nsfw" name="nsfw">
+<label>religious</label>
+<input type="checkbox" value="religious" name="religious">
+<label>political</label>
+<input type="checkbox" value="political" name="political">
+<label>racist</label>
+<input type="checkbox" value="racist" name="racist">
+<label>sexist</label>
+<input type="checkbox" value="sexist" name="sexist">
+<label>explicit</label>
+<input type="checkbox" value="explicit" name="explicit">
+</span>
+</div>
+<!-- select a joke type [single / two parts] div-->
+<div class="joke-type">
+    <p>▪️Select a joke type :</p>
+    <select name="type">
+        <option name="single" value="single">single</option>
+        <option name="twopart" value="twopart">two-part</option>
+    </select>
+</div>
+<!-- submit button -->
+<input type="submit" value="Tell the joke!"/>
+    </form>
+  <!-- show the joke here -->
+  <div class="the-joke">
+    <p class="p-joke"><%= joke %> </p>
+  </div>
+ </div>
+</body>
+</html>
